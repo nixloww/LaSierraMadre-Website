@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sierra Madre</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="lasierramadre— example student project site showing services, about, and contact." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">
+        <img src="lasierramadre.png" alt=" lasierramadre logo" class="logo" />
+        <span class="brand-name">LaSierraMadre</span>
+      </a>
+
+      <button id="navToggle" aria-expanded="false" aria-controls="mainNav" class="nav-toggle">
+        ☰ <span class="sr-only">Menu</span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Smart, sustainable solutions for a greener tomorrow</h1>
+          <p>We design and deploy eco-friendly systems to reduce carbon footprint and save costs.</p>
+          <a class="btn" href="#contact">Get a Quote</a>
+        </div>
+        <div class="hero-image">
+          <img src="sierramadre.jpg" alt="Eco city banner" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <article class="card">
+            <h3>Solar System Design</h3>
+            <p>Custom photovoltaic solutions for homes and small businesses.</p>
+          </article>
+          <article class="card">
+            <h3>Energy Audits</h3>
+            <p>Detailed site audits that find energy saving opportunities.</p>
+          </article>
+          <article class="card">
+            <h3>Smart Controls</h3>
+            <p>Automation for lighting, HVAC, and energy monitoring.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About La Sierra Madre</h2>
+        <p>Sierra Madre is a student-led initiative providing practical, low-cost sustainable technology solutions tailored to local needs.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+            <small class="error" id="nameError" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+            <small class="error" id="emailError" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <small class="error" id="messageError" aria-live="polite"></small>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn">Send Message</button>
+          </div>
+
+          <div id="formSuccess" class="form-success" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> La Sierra Madre. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
