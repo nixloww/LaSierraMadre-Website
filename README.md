@@ -1,4 +1,4 @@
-# La Sierra Madre — Web Development Project
+# DEDMA 
 
 ## Overview
 This project is a responsive website about La Sierra Madre. It demonstrates semantic HTML, CSS layout techniques, and JavaScript interactivity such as mobile navigation and form validation.
